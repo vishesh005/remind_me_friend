@@ -1,70 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/login_background"
-        android:orientation="vertical"
-        tools:context=".LoginScreen">
+<layout>
+    <data>
 
-
+    </data>
     <LinearLayout
-            android:layout_margin="25dp"
-            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        <ImageView
-                android:layout_marginTop="25dp"
-                android:layout_gravity="center"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_remind_me_friend"/>
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            tools:context=".LoginScreen">
 
 
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
+                android:layout_margin="@dimen/login_child_layout_margin"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="EMAIL">
-            <EditText
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_marginTop="@dimen/login_icon_margin_top"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/login_icon_width"
+                    android:layout_height="@dimen/login_icon_height"
+                    android:src="@drawable/login_icon"/>
+
+            <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:text="REMIND ME FRIEND"
+                    android:textColor="@android:color/white"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-        </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/login_textView_textSize"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="PASSWORD">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:hint="EMAIL">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="PASSWORD">
 
-        <Button
-                android:textColor="@android:color/white"
-                android:text="LOGIN"
-                android:layout_margin="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_login"/>
+                <EditText
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
 
-        <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:textColor="@drawable/button_login_text"
+                    android:text="Login"
+                    android:layout_margin="@dimen/login_button_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_login"/>
 
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-        </RelativeLayout>
+                <TextView
+                        android:textSize="20dp"
+                        android:text="Register"
+                        android:background="@drawable/login_responsive_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
 
+                <TextView
+                        android:textSize="20dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_marginTop="@dimen/login_relative_layout_margin_Top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_marginLeft="@dimen/google_facebook_left_right_margin"
+                        android:src="@drawable/ic_facebook"
+                        android:layout_width="@dimen/login_google_facebook_icon_width"
+                        android:layout_height="@dimen/login_google_facebook_icon_height"/>
+
+                <ImageView
+                        android:layout_marginRight="@dimen/google_facebook_left_right_margin"
+                        android:src="@drawable/ic_google"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="@dimen/login_google_facebook_icon_width"
+                        android:layout_height="@dimen/login_google_facebook_icon_height"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</layout>

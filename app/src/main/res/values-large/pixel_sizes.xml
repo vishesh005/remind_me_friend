@@ -3,4 +3,18 @@
     <dimen name="splash_icon_height">200dp</dimen>
     <dimen name="splash_icon_width">200dp</dimen>
     <dimen name="splash_text_size">30dp</dimen>
+
+
+    <!-- login screen configuration-->
+    <dimen name="login_child_layout_margin">30dp</dimen>
+    <dimen name="login_icon_margin_top">30dp</dimen>
+    <dimen name="login_icon_width">150dp</dimen>
+    <dimen name="login_icon_height">150dp</dimen>
+    <dimen name="login_textView_textSize">25dp</dimen>
+    <dimen name="login_button_margin">20dp</dimen>
+    <dimen name="login_relative_layout_margin_Top">30dp</dimen>
+    <dimen name="login_google_facebook_icon_width">100dp</dimen>
+    <dimen name="login_google_facebook_icon_height">100dp</dimen>
+    <dimen name="google_facebook_left_right_margin">20dp</dimen>
+
 </resources>

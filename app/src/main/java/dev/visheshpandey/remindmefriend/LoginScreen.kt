@@ -1,12 +1,12 @@
 package dev.visheshpandey.remindmefriend
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class LoginScreen : AppCompatActivity() {
+class LoginScreen : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_screen)
+        getComponent().inject(this)
     }
 }
