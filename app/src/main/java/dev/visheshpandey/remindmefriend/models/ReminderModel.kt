@@ -8,7 +8,7 @@ import java.util.*
 @Entity
 data class ReminderModel(
     @PrimaryKey
-    @ColumnInfo val _id: UUID,
+    @ColumnInfo val _id: String,
 
     @ColumnInfo val title: String,
 
